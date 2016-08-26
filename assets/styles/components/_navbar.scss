@@ -1,0 +1,17 @@
+div.navbar {
+  width: 100%;
+  margin-bottom: 0;
+  .container-fluid {
+    background: #fff;
+  }
+  .navbar-nav {
+    > li {
+      a {
+      }
+      &.active, &:hover {
+        > a, a:hover {
+        }
+      }
+    }
+  }
+}

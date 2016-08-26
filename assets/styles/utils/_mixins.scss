@@ -1,0 +1,24 @@
+/*********************
+BREAKPOINTS
+*********************/
+$MQs: true;
+
+@mixin bp($point) {
+  @if ($MQs) {
+    $bp-xsmall: "(min-width: 320px)";
+    $bp-small: "(min-width: 480px)";
+    $bp-medium: "(min-width: 768px)";
+    $bp-large: "(min-width: 1030px)";
+    $bp-xlarge: "(min-width: 1400px)";
+
+    @if $point == large {
+      @media #{$bp-large} { @content; }
+    }
+    @else if $point == medium {
+      @media #{$bp-medium} { @content; }
+    }
+    @else if $point == small {
+      @media #{$bp-small}  { @content; }
+    }
+  }
+}
