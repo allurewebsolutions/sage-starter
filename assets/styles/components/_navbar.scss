@@ -4,6 +4,13 @@ div.navbar {
   .container-fluid {
     background: #fff;
   }
+  .navbar-brand {
+    height: auto;
+    max-width: 400px;
+    >img {
+      width: 100%;
+    }
+  }
   .navbar-nav {
     > li {
       a {
