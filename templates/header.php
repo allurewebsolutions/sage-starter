@@ -50,3 +50,16 @@
   ?>
 
 </header><!-- /.container-fluid -->
+
+<!-- Breadcrumbs -->
+<?php if (function_exists('bcn_display') && !is_front_page()) { ?>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="container">
+        <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+          <?php bcn_display(); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+<?php } ?>
