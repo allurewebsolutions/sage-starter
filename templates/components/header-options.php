@@ -73,6 +73,13 @@ if (!empty($image)): ?>
 <?php if (get_field('hide_title')): ?>
   <!-- Hide Title -->
 
+  <style>
+    .jumbotron {
+      display: none;
+      visibility: hidden;
+    }
+  </style>
+
   <script>
     function defer(method) {
       if (window.jQuery) {
