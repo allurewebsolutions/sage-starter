@@ -24,6 +24,52 @@ function customize_register($wp_customize)
   ));
 
   /**
+   * Header
+   */
+  $wp_customize->add_section('header', array(
+    'priority' => 10,
+    'capability' => 'edit_theme_options',
+    'theme_supports' => '',
+    'title' => __('Header', 'textdomain'),
+    'description' => 'The header section include the logo and the main menu.',
+    'panel' => 'theme_options',
+  ));
+
+  // Hide Header
+  $wp_customize->add_setting('hide-header', array(
+    //'default' => 'Welcome to ' . get_bloginfo('name'),
+    'type' => 'theme_mod',
+    'capability' => 'edit_theme_options',
+    'transport' => '',
+    //'sanitize_callback' => 'esc_textarea',
+  ));
+
+  $wp_customize->add_control('hide-header', array(
+    'label' => __('Hide Header', 'textdomain'),
+    'type' => 'checkbox',
+    'priority' => 10,
+    'section' => 'header',
+    'description' => 'Check to hide header site-wide.',
+  ));
+
+  // Hide Breadcrumbs
+  $wp_customize->add_setting('hide-breadcrumbs', array(
+    //'default' => 'Welcome to ' . get_bloginfo('name'),
+    'type' => 'theme_mod',
+    'capability' => 'edit_theme_options',
+    'transport' => '',
+    //'sanitize_callback' => 'esc_textarea',
+  ));
+
+  $wp_customize->add_control('hide-breadcrumbs', array(
+    'label' => __('Hide Breadcrumbs', 'textdomain'),
+    'type' => 'checkbox',
+    'priority' => 10,
+    'section' => 'header',
+    'description' => 'Check to hide breadcrumbs site-wide.',
+  ));
+
+  /**
    * Inner Page Banner
    */
   $wp_customize->add_section('jumbotron', array(
@@ -35,6 +81,24 @@ function customize_register($wp_customize)
     'panel' => 'theme_options',
   ));
 
+  // Hide Jumbotron
+  $wp_customize->add_setting('hide-jumbotron', array(
+    //'default' => 'Welcome to ' . get_bloginfo('name'),
+    'type' => 'theme_mod',
+    'capability' => 'edit_theme_options',
+    'transport' => '',
+    //'sanitize_callback' => 'esc_textarea',
+  ));
+
+  $wp_customize->add_control('hide-jumbotron', array(
+    'label' => __('Hide Jumbotron', 'textdomain'),
+    'type' => 'checkbox',
+    'priority' => 10,
+    'section' => 'jumbotron',
+    'description' => 'Check to hide jumbotron side-wide.',
+  ));
+
+  // Jumbotron Headline
   $wp_customize->add_setting('jumbotron-tagline', array(
     //'default' => 'Welcome to ' . get_bloginfo('name'),
     'type' => 'theme_mod',
