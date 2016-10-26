@@ -12,13 +12,27 @@ $MQs: true;
     $bp-xlarge: "(min-width: 1400px)";
 
     @if $point == large {
-      @media #{$bp-large} { @content; }
-    }
-    @else if $point == medium {
-      @media #{$bp-medium} { @content; }
-    }
-    @else if $point == small {
-      @media #{$bp-small}  { @content; }
+      @media #{$bp-large} {
+        @content;
+      }
+    } @else if $point == medium {
+      @media #{$bp-medium} {
+        @content;
+      }
+    } @else if $point == small {
+      @media #{$bp-small}  {
+        @content;
+      }
     }
   }
 }
+
+/****
+USAGE
+
+
+@include bp(medium) {
+    width: 100%;
+}
+
+*****/
