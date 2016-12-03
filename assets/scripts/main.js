@@ -54,7 +54,7 @@
         function footerColumns() {
           var footerCols = $('footer section');
           var footerColsNum = parseInt(footerCols.length);
-          var columnWidth = (footerColsNum === '5') ? '15' : 12 / footerColsNum;
+          var columnWidth = (footerColsNum === 5) ? 15 : 12 / footerColsNum;
           footerCols.each(function () {
             $(this).addClass('col-md-' + columnWidth);
           });
