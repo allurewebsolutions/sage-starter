@@ -1,0 +1,29 @@
+header {
+  & + div.breadcrumbs {
+    margin-top: 120px;
+    @include bp(medium) {
+      margin-top: 100px;
+    }
+    & + div.jumbotron, & + div.wrap.container {
+      margin-top: 0;
+    }
+  }
+
+  & + div.jumbotron {
+    margin-top: 120px;
+    @include bp(medium) {
+      margin-top: 100px;
+    }
+
+    & + div.wrap.container {
+      margin-top: 0;
+    }
+  }
+
+  & + div.wrap.container {
+    margin-top: 120px;
+    @include bp(medium) {
+      margin-top: 100px;
+    }
+  }
+}
