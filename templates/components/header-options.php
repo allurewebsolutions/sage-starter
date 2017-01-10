@@ -40,7 +40,7 @@ if (!empty($image)): ?>
 
   <style>
     div.navbar, div.navbar {
-      background-color: rgba(0,0,0,0.2);
+      background-color: rgba(0, 0, 0, 0.2);
       border: none;
     }
   </style>

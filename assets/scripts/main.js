@@ -76,11 +76,12 @@
         var $nav = $('.navbar');
         var navbarHeight = $nav.innerHeight();
 
-        $nav.affix({
-          offset: {
-            top: navbarHeight
-          }
+        $(window).on('load', function () {
+          $('header + div.breadcrumbs, header + div.jumbotron, header + div.wrap.container').css('margin-top', navbarHeight);
         });
+
+
+
 
 
         // Back To Top
@@ -110,7 +111,7 @@
         $back_to_top.on('click', function (event) {
           event.preventDefault();
           $('body,html').animate({
-              scrollTop: 0,
+              scrollTop: 0
             }, scroll_top_duration
           );
         });

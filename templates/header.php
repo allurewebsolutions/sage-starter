@@ -6,7 +6,7 @@
 <?php if (!get_theme_mod('hide-header')) { ?>
   <header class="container-fluid">
     <div class="row">
-      <div class="banner navbar navbar-default navbar-static-top" role="banner">
+      <div class="banner navbar navbar-default navbar-static-top affix" role="banner">
         <div class="container">
 
           <div class="navbar-header">
