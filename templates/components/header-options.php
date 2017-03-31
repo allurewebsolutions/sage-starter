@@ -16,7 +16,7 @@ if (!empty($image)): ?>
       }
     }
     defer(function () {
-      $('header').prepend('<div class="row banner-bg" />');
+      jQuery('header').prepend('<div class="row banner-bg" />');
     });
   </script>
 
@@ -91,7 +91,7 @@ if (!empty($image)): ?>
       }
     }
     defer(function () {
-      $('.jumbotron').remove();
+      jQuery('.jumbotron').remove();
     });
   </script>
 
@@ -111,7 +111,7 @@ if (!empty($image)): ?>
       }
     }
     defer(function () {
-      $('.banner-bg').addClass('blur');
+      jQuery('.banner-bg').addClass('blur');
     });
   </script>
 
