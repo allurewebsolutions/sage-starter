@@ -17,6 +17,7 @@
 @import "components/grid";
 @import "components/navbar";
 @import "components/wp-classes";
+@import "components/comments";
 
 
 @import "layout/header";
@@ -25,6 +26,9 @@
 @import "layout/pages";
 @import "layout/posts";
 @import "layout/tinymce";
+
+@import "pages/home";
+@import "pages/single";
 
 @import "hacks/grid";
 @import "hacks/header";
